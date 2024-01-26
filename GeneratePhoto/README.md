@@ -1,36 +1,38 @@
-Below are the steps to get your widget running. You can also find instructions at:
+# Generate Photo Figma Widget
+## Introduction
+This documentation provides an overview of the Figma widget code designed to display random photos from Unsplash based on a keyword. The code utilizes Figma's plugin development environment and interacts with the Unsplash API to fetch and display images.
 
-https://www.figma.com/widget-docs/setup-guide/
+## Code Overview
+The provided code consists of JavaScript functions and components tailored for use within the Figma plugin environment. Here's a breakdown of the main components and their functionalities:
 
-This widget template uses TypeScript and NPM, two standard tools in creating JavaScript applications.
+1. downloadAndDisplayImage(keyword)
+This asynchronous function fetches a random image from Unsplash based on the provided keyword or a default keyword if none is provided.
+It constructs the URL for the Unsplash API request and handles the response.
+Upon successful retrieval of image data, it logs relevant information to the console.
+Note: The code currently lacks the implementation to display the fetched image within the Figma environment.
+2. Widget()
+This function defines a React component that serves as the main widget displayed within the Figma canvas.
+It sets a default keyword ('cat' in this case) and renders a text element.
+Clicking on this text element triggers the downloadAndDisplayImage() function, initiating the process of fetching and displaying a random photo from Unsplash.
+3. Figma Widget Registration
+The code concludes with the registration of the Widget component using the widget.register() method. This step ensures that the widget is available for use within the Figma plugin.
+Usage
+To integrate and utilize this Figma widget within your Figma environment, follow these steps:
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
 
-https://nodejs.org/en/download/
+## Setup
+1. Clone the GitHub repository
+2. Open Figma -> Look for Widgets Menu -> Development -> Import from Manifest
+3. Import manifest.json file
+4. Widgets Menu -> Development -> Show/Hide Console.
+5. Click on text to generate photo link and description in the console.
 
-Next, install TypeScript, esbuild and the latest type definitions by running:
 
-npm install
+## Optional Features
+Modify Keyword (Optional): If desired, modify the keyword variable within the Widget function to specify a default keyword for image searches.
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
 
-For more information, visit https://www.typescriptlang.org/
 
-Using TypeScript requires a compiler to convert TypeScript (widget-src/code.tsx) into JavaScript (dist/code.js)
-for the browser to run. We use esbuild to do this for us.
 
-We recommend writing TypeScript code using Visual Studio code:
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-   then select "npm: watch". You will have to do this again every time
-   you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
