@@ -3,7 +3,7 @@
 This documentation provides an overview of the Figma widget code designed to display random photos from Unsplash based on a keyword. The code utilizes Figma's plugin development environment and interacts with the Unsplash API to fetch and display images.
 
 ## Code Overview
-The provided code consists of JavaScript functions and components tailored for use within the Figma plugin environment. Here's a breakdown of the main components and their functionalities:
+The provided code consists of TypeScript functions and components tailored for use within the Figma plugin environment. Here's a breakdown of the main components and their functionalities:
 
 1. downloadAndDisplayImage(keyword)
 This asynchronous function fetches a random image from Unsplash based on the provided keyword or a default keyword if none is provided.
