@@ -22,7 +22,7 @@ To integrate and utilize this Figma widget within your Figma environment, follow
 
 ## Setup
 1. Clone the GitHub repository
-2. Open repository terminal and run ```npm run watch```
+2. Open repository terminal and type ```npm run watch```
 3. Open Figma -> Look for Widgets Menu -> Development -> Import from Manifest
 4. Import manifest.json file
 5. Widgets Menu -> Development -> Show/Hide Console.
