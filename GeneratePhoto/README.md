@@ -25,8 +25,9 @@ To integrate and utilize this Figma widget within your Figma environment, follow
 2. Open repository terminal and type ```npm run watch```
 3. Open Figma -> Look for Widgets Menu -> Development -> Import from Manifest
 4. Import manifest.json file
-5. Widgets Menu -> Development -> Show/Hide Console.
-6. Click on text to generate photo link and description in the console.
+5. Drop the spreadsheet title widget onto the Figma workspace
+6. Widgets Menu -> Development -> Show/Hide Console.
+7. Click on text to generate photo link and description in the console.
 
 
 ## Exercise
