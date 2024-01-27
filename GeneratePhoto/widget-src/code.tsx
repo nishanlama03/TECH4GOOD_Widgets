@@ -18,6 +18,7 @@ async function downloadAndDisplayImage(keyword) {
     }
 
     const json = await response.json();
+    console.log(json);
     console.log('This image is: ', json.alt_description);
     console.log('Image Download Link:', json.urls.full);
 
