@@ -28,8 +28,8 @@ To integrate and utilize this Figma widget within your Figma environment, follow
 5. Click on text to generate photo link and description in the console.
 
 
-## Optional Features
-Modify Keyword (Optional): If desired, modify the keyword variable within the Widget function to specify a default keyword for image searches.
+## Exercise
+Modify Keyword : If desired, modify the keyword variable within the Widget function to specify a default keyword for image searches.
 
 
 
