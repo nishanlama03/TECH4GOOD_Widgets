@@ -12,7 +12,6 @@
   "devDependencies": {
     "@figma/plugin-typings": "*",
     "@figma/widget-typings": "*",
-    "@figma/plugin-typings - npm": "*",
     "esbuild": "*",
     "typescript": "*"
   },
